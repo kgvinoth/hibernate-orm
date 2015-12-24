@@ -76,7 +76,7 @@ public class PostgresPlusDialect extends PostgreSQLDialect {
 
 	@Override
 	public String getSelectGUIDString() {
-		return "select uuid_generate_v1";
+		return "select uuid_generate_v1()";
 	}
 
 }
